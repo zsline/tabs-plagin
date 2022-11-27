@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+button{
+    border: none;
+
+}
+.tabs{
+    width: 600px;
+    margin: 0 auto;
+}
+.tabs__nav{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.tabs__nav-btn{
+    background-color: azure;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+}
+.tabs__nav-btn:focus{
+    background-color: rgb(126, 196, 196);
+    color: #fff;
+}
+.tabs__nav-btn.tabs__nav-btn--active{
+    background-color: rgb(247, 81, 81);
+    color: #fff;
+}
+.tabs__panel{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 100px;
+    padding: 30px;
+    display: none;
+}
+.tabs__panel.tabs__panel--active{
+    display: block;
+}
