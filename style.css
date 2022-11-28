@@ -6,8 +6,13 @@ li{
 }
 button{
     border: none;
+    cursor: pointer;
+    padding: 10px 20px;
 
 }
+
+/* стили для табов ====================================================================================================*/
+
 .tabs{
     width: 600px;
     margin: 0 auto;
@@ -42,4 +47,85 @@ button{
 }
 .tabs__panel.tabs__panel--active{
     display: block;
+}
+
+
+/* стили для модального окна ====================================================================================================*/
+
+.content{
+    height: 200vh;
+}
+.modal{
+    --transition-time: 0.3s;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    cursor: pointer;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-time);
+}
+
+.modal::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.modal__container{
+    position: relative;
+    width: 1000px;
+    margin: 50px auto;
+    display: none;
+    vertical-align: middle;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    cursor: default;
+}
+@media(max-width: 1024px) {
+    .modal__container{
+        width: 90%;
+    }
+}
+
+.modal.is-open{
+opacity: 1;
+visibility: visible;
+transition: all var(--transition-time);
+}
+
+.modal__container.modal-open{
+    display: inline-block;
+}
+.fade{
+    opacity: 0;
+    transition: all var(--transition-time);
+}
+
+.fade.animate-open{
+    opacity: 1;
+    transition: all var(--transition-time);
+}
+
+*:focus{
+    outline: 1px solid #000;
+}
+
+.disable-scroll{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100%;
 }

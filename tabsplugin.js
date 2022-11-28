@@ -6,8 +6,6 @@
 5. Проверки на различные условия
 
 */
-
-
 class DerTabs {
     constructor(selector, options) {
         let defaultOption = {

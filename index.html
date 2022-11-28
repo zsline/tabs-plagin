@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Плагин для табов</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="tabs" data-tabs="tab">
         <ul class="tabs__nav">
@@ -26,26 +28,89 @@
             <div class="tabs__panel">Контент 3</div>
         </div>
     </div>
-    <div class="tabs" data-tabs="tab1">
-        <ul class="tabs__nav">
-            <li class="tabs__nav-item">
-                <button class="tabs__nav-btn" type="button">Один</button>
-            </li>
-            <li class="tabs__nav-item">
-                <button class="tabs__nav-btn" type="button">Два</button>
-            </li>
-            <li class="tabs__nav-item">
-                <button class="tabs__nav-btn" type="button">Три</button>
-            </li>
-        </ul>
-        <div class="tabs__content">
-            <div class="tabs__panel">Контент 1</div>
-            <div class="tabs__panel">Контент 2</div>
-            <div class="tabs__panel">Контент 3</div>
+
+
+    <div class="content fix-block">
+        <button class="modal-btn" data-path="first" data-animation="fadeInUp" data-speed="700">Открыть окно 1</button>
+        <button class="modal-btn" data-path="second">Открыть окно 2</button>
+    </div>
+    <div class="modal">
+        <div class="modal__container" data-target="first">
+            <button class="modal-close">Закрыть</button>
+            <div class="modal-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente animi ea reiciendis expedita ratione
+                suscipit accusamus pariatur eos quasi aliquam nostrum quae nisi nemo libero corrupti, asperiores magni
+                mollitia magnam?
+                Illum distinctio saepe molestias iure cumque? Cumque aut et numquam esse asperiores facere quasi
+                temporibus aspernatur, sequi nemo deserunt hic at perspiciatis laudantium quod dolor odit impedit culpa
+                laboriosam consequuntur!
+                Beatae, quibusdam recusandae at quam debitis hic consequatur dolore, quaerat dolorum neque optio ullam
+                voluptatem consequuntur sint nihil. Minus labore vitae assumenda sed, amet optio obcaecati odio. Modi,
+                quam iste?
+                Ipsum iste porro delectus consequuntur officiis! Qui distinctio earum consequuntur explicabo quae
+                placeat asperiores et adipisci sapiente! Quibusdam laudantium praesentium eos cupiditate ex ut voluptas
+                ipsa voluptates. Minima, nam harum?
+                Sapiente atque harum eaque omnis quas doloremque dolore debitis? Laboriosam aut, saepe nesciunt
+                consectetur vero tempore accusamus veniam, architecto omnis expedita eligendi id fugiat eum qui, hic
+                vitae vel facere?
+                Ad numquam doloribus id saepe deserunt facilis, tenetur, eligendi similique ab aperiam suscipit fuga
+                aliquam ratione explicabo atque quis odio ducimus perferendis voluptatibus amet exercitationem eos?
+                Minus enim ipsam iste.
+                Exercitationem sunt pariatur voluptas, quibusdam laudantium necessitatibus optio perspiciatis nulla
+                maiores facere aspernatur et? Optio, deserunt? Veritatis possimus eaque labore doloremque rerum!
+                Consequatur, sint? Qui quasi provident iure eveniet modi?
+                Officia nemo unde labore culpa hic possimus eum tenetur cum rerum explicabo a eius quisquam laborum
+                veniam nobis nesciunt quaerat saepe at omnis error, blanditiis illo! Quaerat necessitatibus assumenda
+                minima.
+                Fuga assumenda explicabo quaerat quibusdam hic beatae earum perspiciatis cumque praesentium molestiae
+                porro eligendi laborum ab esse, modi reiciendis? Quidem officia itaque et vero at ex libero? Esse, ipsam
+                impedit.
+                Quidem, quis repellendus incidunt praesentium illum quisquam velit libero tempora ut recusandae sit quas
+                doloremque possimus vero amet nulla voluptatum optio? Ipsam ea dolore beatae sunt voluptatum odit
+                incidunt. Modi.
+            </div>
+            <input type="button" value="">
+            <button>0</button>
+        </div>
+        <div class="modal__container" data-target="second">
+            <button class="modal-close">Закрыть</button>
+            <div class="modal-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente animi ea reiciendis expedita ratione
+                suscipit accusamus pariatur eos quasi aliquam nostrum quae nisi nemo libero corrupti, asperiores magni
+                mollitia magnam?
+                Illum distinctio saepe molestias iure cumque? Cumque aut et numquam esse asperiores facere quasi
+                temporibus aspernatur, sequi nemo deserunt hic at perspiciatis laudantium quod dolor odit impedit culpa
+                laboriosam consequuntur!
+                Beatae, quibusdam recusandae at quam debitis hic consequatur dolore, quaerat dolorum neque optio ullam
+                voluptatem consequuntur sint nihil. Minus labore vitae assumenda sed, amet optio obcaecati odio. Modi,
+                quam iste?
+                Ipsum iste porro delectus consequuntur officiis! Qui distinctio earum consequuntur explicabo quae
+                placeat asperiores et adipisci sapiente! Quibusdam laudantium praesentium eos cupiditate ex ut voluptas
+                ipsa voluptates. Minima, nam harum?
+                Sapiente atque harum eaque omnis quas doloremque dolore debitis? Laboriosam aut, saepe nesciunt
+                consectetur vero tempore accusamus veniam, architecto omnis expedita eligendi id fugiat eum qui, hic
+                vitae vel facere?
+                Ad numquam doloribus id saepe deserunt facilis, tenetur, eligendi similique ab aperiam suscipit fuga
+                aliquam ratione explicabo atque quis odio ducimus perferendis voluptatibus amet exercitationem eos?
+                Minus enim ipsam iste.
+                Exercitationem sunt pariatur voluptas, quibusdam laudantium necessitatibus optio perspiciatis nulla
+                maiores facere aspernatur et? Optio, deserunt? Veritatis possimus eaque labore doloremque rerum!
+                Consequatur, sint? Qui quasi provident iure eveniet modi?
+                Officia nemo unde labore culpa hic possimus eum tenetur cum rerum explicabo a eius quisquam laborum
+                veniam nobis nesciunt quaerat saepe at omnis error, blanditiis illo! Quaerat necessitatibus assumenda
+                minima.
+                Fuga assumenda explicabo quaerat quibusdam hic beatae earum perspiciatis cumque praesentium molestiae
+                porro eligendi laborum ab esse, modi reiciendis? Quidem officia itaque et vero at ex libero? Esse, ipsam
+                impedit.
+                Quidem, quis repellendus incidunt praesentium illum quisquam velit libero tempora ut recusandae sit quas
+                doloremque possimus vero amet nulla voluptatum optio? Ipsam ea dolore beatae sunt voluptatum odit
+                incidunt. Modi.
+            </div>
         </div>
     </div>
-
     <script src="tabsplugin.js"></script>
+    <script src="modal.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
